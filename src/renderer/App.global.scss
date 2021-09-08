@@ -1,0 +1,15 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+ @import 'antd/dist/antd.css';
+ @import '//at.alicdn.com/t/font_2791523_eulp7t069ww.css';
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+
+
+
+
