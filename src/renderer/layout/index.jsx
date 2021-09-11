@@ -1,10 +1,10 @@
 /*
  * @Author: zhao - 🍉
  * @Date: 2021-09-03 14:41:17
- * @LastEditTime: 2021-09-07 17:07:32
+ * @LastEditTime: 2021-09-11 16:04:56
  * @LastEditors: zhao - 🍉
  * @Description:
- * @FilePath: /your-project-name/src/renderer/layout/index.jsx
+ * @FilePath: /deepSea-diagnosis/src/renderer/layout/index.jsx
  */
 
 import React from 'react';
@@ -16,14 +16,8 @@ import LayoutSlide from './components/LayoutSlide';
 
 const cx = classNames.bind(styles);
 class Layout extends React.Component {
-  constructor() {
-    super();
-    this.state = { name: 'aaa' };
-  }
-
   render() {
     const { children } = this.props;
-    const { name } = this.state;
     return (
       <div className={cx('layout')}>
         <LayoutHeader />
