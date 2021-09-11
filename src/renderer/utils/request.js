@@ -1,10 +1,10 @@
 /*
  * @Author: zhao - 🍉
  * @Date: 2021-09-03 16:01:12
- * @LastEditTime: 2021-09-03 16:37:11
+ * @LastEditTime: 2021-09-11 16:05:24
  * @LastEditors: zhao - 🍉
  * @Description:
- * @FilePath: /your-project-name/src/renderer/utils/request.js
+ * @FilePath: /deepSea-diagnosis/src/renderer/utils/request.js
  */
 import axios from 'axios';
 
@@ -24,7 +24,7 @@ request.interceptors.response.use((res) => {
     throw new Error('请求失败');
   }
   if (res.status === 401) {
-    return Promise.reject('无权访问');
+    return Promise.reject(new Error('无权访问'));
   }
   if (res.status !== 200) {
     throw new Error('请求失败');
