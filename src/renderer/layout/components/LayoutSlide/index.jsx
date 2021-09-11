@@ -100,8 +100,7 @@ class LayoutSlide extends React.Component {
     // 子节点只有一个,且子节点为组件时不显示左侧菜单
     if (
       menuList.length === 1 &&
-      !menuList[0].children &&
-      menuList[0].children.length === 0
+      (!menuList[0].children || menuList[0].children.length === 0)
     ) {
       return null;
     }
