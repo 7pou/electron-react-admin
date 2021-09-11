@@ -1,10 +1,10 @@
 /*
  * @Author: zhao - 🍉
  * @Date: 2021-09-03 11:24:42
- * @LastEditTime: 2021-09-07 18:10:19
+ * @LastEditTime: 2021-09-11 16:16:59
  * @LastEditors: zhao - 🍉
  * @Description:
- * @FilePath: /your-project-name/.eslintrc.js
+ * @FilePath: /deepSea-diagnosis/.eslintrc.js
  */
 module.exports = {
   extends: 'erb',
@@ -19,7 +19,7 @@ module.exports = {
     'prefer-template': 'off',
     'react/prop-types': 'off', //
     'react/destructuring-assignment': 'off', // 必须解构取值
-    'react/jsx-fragments': 'off',
+    'react/jsx-fragments': 'off', // 必须使用空标签 而非 React.Fragment
   },
   parserOptions: {
     ecmaVersion: 2020,
