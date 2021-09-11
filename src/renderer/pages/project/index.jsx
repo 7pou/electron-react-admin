@@ -1,10 +1,10 @@
 /*
  * @Author: zhao - 🍉
  * @Date: 2021-09-04 16:03:16
- * @LastEditTime: 2021-09-04 16:03:17
+ * @LastEditTime: 2021-09-11 16:14:45
  * @LastEditors: zhao - 🍉
  * @Description:
- * @FilePath: /your-project-name/src/renderer/pages/project/index.js
+ * @FilePath: /deepSea-diagnosis/src/renderer/pages/project/index.jsx
  */
 import React from 'react';
 
