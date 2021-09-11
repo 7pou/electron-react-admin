@@ -1,10 +1,10 @@
 /*
  * @Author: zhao - 🍉
  * @Date: 2021-09-03 14:13:03
- * @LastEditTime: 2021-09-07 17:02:30
+ * @LastEditTime: 2021-09-11 16:04:15
  * @LastEditors: zhao - 🍉
  * @Description:
- * @FilePath: /your-project-name/src/renderer/pages/login/index.jsx
+ * @FilePath: /deepSea-diagnosis/src/renderer/pages/login/index.jsx
  */
 import { Form, Input, Button } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
@@ -17,17 +17,10 @@ import styles from './index.scss';
 const cx = classNames.bind(styles);
 
 class Login extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      name: 'Login1',
-    };
-  }
-
   onFinish = (values) => {
     console.log('Success:', values);
 
-    fetchUserList().then((res) => {});
+    fetchUserList().then(() => {});
   };
 
   onFinishFailed = (errorInfo) => {
