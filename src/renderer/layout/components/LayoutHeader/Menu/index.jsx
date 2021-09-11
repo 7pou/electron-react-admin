@@ -30,7 +30,7 @@ class LayoutHeaderMenu extends React.Component {
       if (route.component) {
         return path;
       }
-      const list = (route.children || []).filter((e) => !e.hidden);
+      const list = (route.children || []).filter((item) => !item.hidden);
       if (list.length) {
         path += deep(list[0]);
       }
@@ -52,8 +52,6 @@ class LayoutHeaderMenu extends React.Component {
       this.setState({ currentMenu: current.path });
     }
   }
-
-  renderMenuItem() {}
 
   render() {
     const { currentMenu } = this.state;
